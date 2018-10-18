@@ -57,8 +57,11 @@ function draw() {
 Create a new sketch with the code and check it matched your prediction.
 
 **What's wrong with this code?**
+The createCanvas function wasn't declared, producing no visible output. The code is also too generic and extensive.
+The same output could be produced by using an array and/or a loop.
 
 **How could we improve it?**
+By introducing a while into the scenario, we can establish the number of variables that we wish to output. This will shorten the code, make the code more readable and produce an output more quickly.
 
 There's a lot of repetition in the code here. Generally, as programmers, we try
 to avoid repetition - often the more code we have, the more space there is for
@@ -83,6 +86,7 @@ function draw() {
 ```
 
 **How does changing `count` effect your sketch?**
+Changing the count has no effect on the code. Unless you replace it with another variable. 
 
 Let's talk through this line by line:
 
@@ -148,7 +152,9 @@ x = x + 20
 ```
 
 **Write a description for these two lines in here**
-
+The rect function produces a rectangle shape, using the x coordinate (which was previously assigned as 10).
+The line beneath is informs the program to produce a rectangle in the x axis + 20 pixels. This is contained within a
+loop (which loops around 5 times), which will produce a rectangle 5 times.
 ---
 
 ```js
